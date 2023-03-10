@@ -1,2 +1,14 @@
 @import "~bootstrap/scss/bootstrap";
 
+@import "./partials/card.scss";
+
+// Font-Awesome
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+
+
+
+body {
+    background-color: rgba(19, 15, 24, 0.817);
+    color: white;
+}

@@ -14,7 +14,9 @@ class MainController extends Controller
 {
     public function index()
     {
+        //prendo tutti i file dalla tabella Movie del database
         $movies = Movie::all();
-        return view("homepage");
+        //li passo alla mia homepage
+        return view("homepage", compact("movies"));
     }
 }
