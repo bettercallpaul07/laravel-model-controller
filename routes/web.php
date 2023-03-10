@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+//importiamo il Controller per la gestione della rotta dell'index
+use App\Http\Controllers\Guest\MainController as GuestController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//utilizziamo il controller per gestire la rotta dell'index
+Route::get(
+    '/',
+    [GuestController::class, "index"]
+);
